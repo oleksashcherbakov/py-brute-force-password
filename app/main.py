@@ -26,7 +26,7 @@ def is_password_valid(password: str) -> None:
         to_hash = str(i).zfill(8)
 
         if sha256_hash_str(to_hash) == password:
-            print(f"password: {to_hash} is valid for {password}")
+            print(to_hash)
             break
 
 
